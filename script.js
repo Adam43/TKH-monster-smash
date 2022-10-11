@@ -3,11 +3,11 @@
   //declare a variable named playerName that stores the value the player enters from a prompt
 let playerName = prompt("Player, what is your name?")
   //declare a variable named playerHealth and set it equal to the number value 15
-const playerHealth = 15
+let playerHealth = 15
   //assign a name of a monster (ex 'Werewolf') as a string to a variable named monsterName
 const monsterName = 'Gandolf'
   //declare a variable named monsterHealth and set it equal to the number value 15
-const monsterHealth = 15
+let monsterHealth = 15
 //random integer function 
 //see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
 function randomNum(min, max) {
@@ -38,7 +38,7 @@ let monsterAttackPoints = randomNum(1,6);
   //subtract monsterAttackPoints from playerHealth and update the playerHealth variable 
 playerHealth = playerHealth - monsterAttackPoints;
 alert(`${monsterName} has attacked ${playerName}`);
-alert(`${monsterName}has dealt ${monsterAttackPoints} to ${playerName}`);
+alert(`${monsterName} has dealt ${monsterAttackPoints} to ${playerName}`);
 alert(`${playerName} health is now ${playerHealth}`);
   //use an alert with string template literals to tell the player: 
   // 1. monster attacked player 
@@ -66,7 +66,7 @@ function playRound() {
     }
   }
   //if monster goes first, run monsterAttack, then if playerHealth > 0, run playerAttack 
-
+}
 function playGame() {
   //beginning game message
   alert(
@@ -80,7 +80,7 @@ function playGame() {
   while(playerHealth >= 0 && monsterHealth >= 0){
     roundNumber++
    //write an alert statement that tells the player what round number it is, and the player's and monster's current health points
- alert(`It is now ${roundNumber}.${playerName} health is ${playerHealth} and ${monsterName} health is ${monsterHealth}.`)
+ alert(`It is now Round ${roundNumber}. ${playerName} health is ${playerHealth} and ${monsterName} health is ${monsterHealth}.`)
    //call playRound inside the while loop
     playRound()
   }
@@ -92,7 +92,7 @@ function playGame() {
   {
     alert(`${monsterName} You Win | ${playerName} You Lose!`);
   }
-}
-}
+} //end of loop
+
 //call playGame to start game
  playGame()
