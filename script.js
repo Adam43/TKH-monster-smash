@@ -92,6 +92,7 @@ function playGame() {
   {
     alert(`${monsterName} You Win | ${playerName} You Lose!`);
   }
-
+}
+}
 //call playGame to start game
  playGame()
