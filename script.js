@@ -86,11 +86,11 @@ function playGame() {
   }
   //outside of while loop, declare a winner and use alert to show a win or lose message 
   if (playerHealth >0 && monsterHealth <=0){
-    alert(`${playerName} You Win! | ${monsterName} You Lose!`);
+    alert(`${playerName} You Win!`);
   }
-  else if(monsterHealth > 0 && playerHealth < 0);
+  else if(monsterHealth > 0 && playerHealth <= 0);
   {
-    alert(`${monsterName} You Win | ${playerName} You Lose!`);
+    alert(`${playerName} You Lose!`);
   }
 } //end of loop
 
