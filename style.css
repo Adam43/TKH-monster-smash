@@ -1,0 +1,21 @@
+body {
+    background-color: rgb(50, 50, 75);
+}
+
+.image {
+    display: flex;
+    align-items: center;
+    flex: 1 200px;
+    position: 0;
+    
+}
+
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: red;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    flex: 1 100px;
+    flex-flow: row wrap;
+}
